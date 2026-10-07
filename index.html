@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>ZERO TO HERO (TRADING)</title>
+
+  <meta
+    name="description"
+    content="Zero To Hero Trading - Join our Telegram community for trading updates and educational content."
+  >
+
+  <!-- =========================
+       META PIXEL
+  ========================== -->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {
+      if(f.fbq)return;
+      n=f.fbq=function(){
+        n.callMethod ?
+        n.callMethod.apply(n,arguments) : n.queue.push(arguments)
+      };
+
+      if(!f._fbq)f._fbq=n;
+
+      n.push=n;
+      n.loaded=!0;
+      n.version='2.0';
+      n.queue=[];
+
+      t=b.createElement(e);
+      t.async=!0;
+      t.src=v;
+
+      s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)
+    }
+    (
+      window,
+      document,
+      'script',
+      'https://connect.facebook.net/en_US/fbevents.js'
+    );
+
+    fbq('init', '1405141361767076');
+
+    fbq('track', 'PageView');
+  </script>
+
+  <noscript>
+    <img
+      height="1"
+      width="1"
+      style="display:none"
+      src="https://www.facebook.com/tr?id=1405141361767076&ev=PageView&noscript=1"
+    >
+  </noscript>
+
+
+  <!-- =========================
+       CSS
+  ========================== -->
+  <style>
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      min-height: 100%;
+    }
+
+    body {
+      background: #ffffff;
+      color: #111111;
+      font-family: Arial, Helvetica, sans-serif;
+
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+    }
+
+    .page {
+      width: 100%;
+      max-width: 500px;
+
+      min-height: 100vh;
+
+      padding: 28px 18px 32px;
+
+      text-align: center;
+    }
+
+
+    /* =========================
+       LOGO
+    ========================== */
+
+    .logo-box {
+      width: 150px;
+      height: 115px;
+
+      margin: 0 auto 15px;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .logo-box img {
+      width: 100%;
+      height: 100%;
+
+      object-fit: contain;
+
+      display: block;
+    }
+
+
+    /* =========================
+       TITLE
+    ========================== */
+
+    .title {
+      margin: 0;
+
+      font-size: 25px;
+      line-height: 1.2;
+
+      font-weight: 800;
+
+      letter-spacing: -0.3px;
+    }
+
+
+    /* =========================
+       SUBSCRIBERS
+    ========================== */
+
+    .subscribers {
+      margin-top: 8px;
+
+      color: #888888;
+
+      font-size: 15px;
+    }
+
+
+    /* =========================
+       MAIN INTRO
+    ========================== */
+
+    .intro {
+      margin: 18px auto 0;
+
+      max-width: 440px;
+
+      font-size: 15px;
+
+      line-height: 1.65;
+    }
+
+
+    /* =========================
+       BENEFITS
+    ========================== */
+
+    .benefits {
+      margin-top: 18px;
+
+      font-size: 15px;
+
+      line-height: 1.7;
+    }
+
+    .benefits p {
+      margin: 7px 0;
+    }
+
+
+    /* =========================
+       DIVIDER
+    ========================== */
+
+    .divider {
+      width: 55px;
+      height: 3px;
+
+      margin: 18px auto 15px;
+
+      border-radius: 20px;
+
+      background: #278bd1;
+    }
+
+
+    /* =========================
+       HINDI CONTENT
+    ========================== */
+
+    .about {
+      max-width: 450px;
+
+      margin: 0 auto;
+
+      color: #333333;
+
+      font-size: 13.8px;
+
+      line-height: 1.65;
+    }
+
+    .about strong {
+      color: #111111;
+    }
+
+
+    /* =========================
+       DISCLAIMER
+    ========================== */
+
+    .notice {
+      max-width: 455px;
+
+      margin: 17px auto 0;
+
+      padding: 11px 13px;
+
+      background: #fafafa;
+
+      border: 1px solid #e7e7e7;
+
+      border-radius: 12px;
+
+      color: #555555;
+
+      font-size: 12px;
+
+      line-height: 1.55;
+    }
+
+
+    /* =========================
+       BUTTON
+    ========================== */
+
+    .action {
+      margin-top: 21px;
+    }
+
+    #joinBtn {
+      width: 180px;
+
+      min-height: 46px;
+
+      padding: 12px 18px;
+
+      border: none;
+
+      border-radius: 28px;
+
+      background: #278bd1;
+
+      color: #ffffff;
+
+      font-size: 14px;
+
+      font-weight: 800;
+
+      cursor: pointer;
+
+      box-shadow:
+        0 6px 16px rgba(39, 139, 209, 0.20);
+
+      transition:
+        transform 0.15s ease,
+        opacity 0.15s ease;
+    }
+
+    #joinBtn:active {
+      transform: scale(0.98);
+    }
+
+    #joinBtn:disabled {
+      opacity: 0.60;
+
+      cursor: not-allowed;
+
+      box-shadow: none;
+    }
+
+
+    /* =========================
+       BUTTON HINT
+    ========================== */
+
+    .hint {
+      margin-top: 9px;
+
+      color: #888888;
+
+      font-size: 11.5px;
+    }
+
+
+    /* =========================
+       STATUS
+    ========================== */
+
+    .status {
+      min-height: 18px;
+
+      margin-top: 7px;
+
+      color: #666666;
+
+      font-size: 12px;
+    }
+
+
+    /* =========================
+       FOOTER
+    ========================== */
+
+    .footer {
+      margin-top: 25px;
+
+      color: #999999;
+
+      font-size: 10.5px;
+
+      line-height: 1.5;
+    }
+
+
+    /* =========================
+       MOBILE
+    ========================== */
+
+    @media (max-width: 380px) {
+
+      .page {
+        padding:
+          24px 14px 30px;
+      }
+
+      .logo-box {
+        width: 135px;
+        height: 105px;
+      }
+
+      .title {
+        font-size: 23px;
+      }
+
+      .intro,
+      .benefits {
+        font-size: 14px;
+      }
+
+    }
+
+  </style>
+
+</head>
+
+
+<body>
+
+  <main class="page">
+
+
+    <!-- =========================
+         LOGO
+         Upload your image as:
+         logo.png
+    ========================== -->
+
+    <div class="logo-box">
+
+      <img
+        src="zth.jpg"
+        alt="Zero To Hero Trader"
+      >
+
+    </div>
+
+
+    <!-- =========================
+         TITLE
+    ========================== -->
+
+    <h1 class="title">
+      ZERO TO HERO (TRADING)
+    </h1>
+
+
+    <!-- =========================
+         SUBSCRIBERS
+    ========================== -->
+
+    <div class="subscribers">
+      20 174 subscribers
+    </div>
+
+
+    <!-- =========================
+         INTRO
+    ========================== -->
+
+    <section class="intro">
+
+      🔷 Join &amp; observe our and get calls
+      and free algo trading tool for all 🤝
+
+    </section>
+
+
+    <!-- =========================
+         BENEFITS
+    ========================== -->
+
+    <section class="benefits">
+
+      <p>
+        🟩 Get upto 100-300 Points
+      </p>
+
+      <p>
+        ☑️ 90% Accuracy...
+      </p>
+
+    </section>
+
+
+    <!-- =========================
+         DIVIDER
+    ========================== -->
+
+    <div class="divider"></div>
+
+
+    <!-- =========================
+         HINDI + ENGLISH CONTENT
+    ========================== -->
+
+    <section class="about">
+
+      <strong>
+        Trading सीखना और market updates पाना चाहते हैं?
+      </strong>
+
+      <br>
+
+      हमारी Telegram community में
+      trading-related updates, educational information
+      और market analysis से जुड़ी जानकारी share की जाती है।
+
+      अगर आप genuinely trading में interested हैं,
+      तभी नीचे दिए गए button से channel join करें।
+
+    </section>
+
+
+    <!-- =========================
+         DISCLAIMER
+    ========================== -->
+
+    <div class="notice">
+
+      ⚠️ Trading और financial markets में risk होता है।
+      यह community educational और informational purpose
+      के लिए है। किसी भी financial decision से पहले
+      अपनी research करें और जरूरत पड़ने पर qualified
+      professional से सलाह लें।
+
+    </div>
+
+
+    <!-- =========================
+         ACTION
+    ========================== -->
+
+    <div class="action">
+
+      <button
+        id="joinBtn"
+        type="button"
+        disabled
+      >
+        JOIN CHANNEL
+      </button>
+
+
+      <div
+        id="hint"
+        class="hint"
+      >
+        Please wait 1.5 seconds…
+      </div>
+
+
+      <div
+        id="status"
+        class="status"
+        aria-live="polite"
+      ></div>
+
+    </div>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <div class="footer">
+
+      Educational &amp; informational content only
+      • Market activities involve risk
+
+    </div>
+
+
+  </main>
+
+
+  <!-- =========================
+       JAVASCRIPT
+  ========================== -->
+
+  <script>
+
+    const TELEGRAM_URL =
+      "https://t.me/+AQb0-84cClJmZTdl";
+
+    const MIN_VIEW_TIME =
+      1500;
+
+
+    const joinBtn =
+      document.getElementById("joinBtn");
+
+    const hint =
+      document.getElementById("hint");
+
+    const status =
+      document.getElementById("status");
+
+
+    let pageReady = false;
+
+    let eventFired = false;
+
+
+    /*
+      =========================================
+      1.5 SECOND QUALITY / INTENT LOGIC
+      =========================================
+
+      Page load ke turant baad button disabled rahega.
+
+      Visitor ko minimum 1.5 seconds page par
+      rehna hoga.
+
+      Isse accidental / instant clicks filter
+      karne mein help milti hai.
+    */
+
+    setTimeout(function () {
+
+      pageReady = true;
+
+      joinBtn.disabled = false;
+
+      hint.textContent =
+        "Telegram channel join करने के लिए क्लिक करें";
+
+    }, MIN_VIEW_TIME);
+
+
+    /*
+      =========================================
+      TELEGRAM BUTTON
+      =========================================
+    */
+
+    joinBtn.addEventListener(
+      "click",
+      function () {
+
+        /*
+          Agar 1.5 seconds complete nahi hue
+          to event fire nahi hoga.
+        */
+
+        if (!pageReady) {
+          return;
+        }
+
+
+        /*
+          Double click / duplicate event protection
+        */
+
+        if (eventFired) {
+          return;
+        }
+
+
+        eventFired = true;
+
+
+        /*
+          Button lock
+        */
+
+        joinBtn.disabled = true;
+
+        joinBtn.textContent =
+          "OPENING TELEGRAM…";
+
+
+        status.textContent =
+          "आपको Telegram पर ले जाया जा रहा है…";
+
+
+        /*
+          Unique event ID
+        */
+
+        const eventId =
+          "subscribe_" +
+          Date.now() +
+          "_" +
+          Math.random()
+            .toString(36)
+            .substring(2, 10);
+
+
+        /*
+          META SUBSCRIBE EVENT
+        */
+
+        if (typeof fbq === "function") {
+
+          fbq(
+            "track",
+            "Subscribe",
+            {},
+            {
+              eventID: eventId
+            }
+          );
+
+        }
+
+
+        /*
+          Short delay so browser event
+          can start sending before redirect.
+        */
+
+        setTimeout(function () {
+
+          window.location.href =
+            TELEGRAM_URL;
+
+        }, 350);
+
+      }
+    );
+
+  </script>
+
+</body>
+</html>
